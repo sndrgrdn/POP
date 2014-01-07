@@ -1,0 +1,14 @@
+{{#if is_completed}}
+  <div class="check check--l">&#x2713;</div>
+{{else}}
+  <div class="check check--l">&#x2715;</div>
+{{/if}}
+<h3>{{ name }}</h3>
+<span class="controls">
+  {{#if is_completed}}
+  <span class="completed">Behaalt op: {{updated_at}}</span>
+  {{else}}
+  [ <button class="edit">Aanpassen</button> | <button class="destroy">Verwijderen</button> ]
+  {{/if}}
+</span>
+<div class="arrow arrow--l"><img src="/assets/arrowhead-black.png" alt="arrow"></div>

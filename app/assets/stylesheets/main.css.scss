@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #404040;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+body { background-color: #e5e5e5; }
+a { color: #009682; text-decoration: none; }
+a:hover { color: #00af97; }
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  margin: 0;
+}
+
+button.add,
+a.btn.add {
+  background-color: #009682;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 8px 12px;
+}
+button.add:hover { background-color: #00af97; }
+
+button.destroy,
+button.edit {
+  background-color: transparent;
+  border: none;
+  color: #009682;
+  font-weight: 300;
+  padding: 0;
+
+    &:hover { color: #00af97; }
+}
+
+.container {
+  margin: 50px auto;
+  width: 940px;
+}
+
+.studieplanner {
+}
+
+.studieplanner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.competence { margin: 10px 0; }
+
+.title {
+
+  margin: 5px 0;
+  width: 100%;
+}
+
+.title h2,
+.title h3,
+.title h4,
+.title span,
+.title .check {
+  display: inline;
+}
+
+.title .check {
+  cursor: pointer;
+  margin-right: 5px;
+}
+.title .controls { margin-left: 20px; }
+.controls .completed { color: #a0a0a0; }
+
+.title .arrow {
+  cursor: pointer;
+  float: right;
+
+  img {
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    transition: all 300ms linear;
+  }
+}
+
+.arrow__up img {
+  -moz-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.arrow--c img {
+  display: block;
+  height: 30px;
+  margin-top: 5px;
+  width: 30px;
+}
+
+.arrow--l img {
+  display: block;
+  height: 20px;
+  margin-top: 2px;
+  width: 20px;
+}
+
+.title--competence {
+  background-color: #666;
+  border-radius: 3px;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  -webkit-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+
+.title--active {
+  background-color: #009682;
+}
+
+.title--competence .edit,
+.title--competence .destroy {
+  color: #fff;
+
+    &:hover {
+      color: #fff;
+      text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+    }
+}
+
+.competence .add { margin: 0; }
+.goals .add { margin: 0; }
+
+ul.activities {
+  padding-left: 20px;
+}
+
+.goals > li { border-bottom: 1px solid #e5e5e5; }
+.new_learninggoal_wrapper { margin-top: 10px; }
+
+.new_activity_wrapper {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.content--c {
+  background-color: #fff;
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+input[type=text] {
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  box-shadow: inset 0px 1px 0px 0px #d9d9d9;
+  color: #404040;
+  font-size: 1rem;
+  padding: 0 10px;
+  height: 2.4rem;
+  width: 100%;
+}
+
+.deleteicon {
+  position: relative;
+}
+
+.deleteicon .close {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+
+// closed state
+.content--c,
+.content--l {
+  display: none;
+}
